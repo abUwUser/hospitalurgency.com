@@ -1,0 +1,22 @@
+.popout {
+    position: fixed;
+    top: 64px;
+    right: 8px;
+    width: 25vw;
+    padding: 12px;
+    box-shadow: 0 0 12px 0 #444;
+    border-radius: 12px;
+    z-index: 100;
+    background-color: #fff;
+}
+
+.popout .title {
+    margin-top: 8px;
+    margin-bottom: 2px;
+    font-weight: 700;
+    color: #47699D;
+}
+
+.popout .content {
+    margin-left: 8px;
+}

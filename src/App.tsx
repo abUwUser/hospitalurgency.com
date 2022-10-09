@@ -8,22 +8,28 @@ import FilterPopout from './components/FilterPopout';
 
 function App() {
     const [filter, setFilter] = useState(defaultFilters)
+    const [popoutVisibility, setPopoutVisibility] = useState(false)
     const [, forceUpdate] = useReducer(c => !c, true)
 
     return <>
-        <div>hospitalurgency.com <MdFilterAlt /></div>
-        <FilterPopout filter={filter} onFilterChange={(newFilter) => {
+        <div className='header'>
+            <div className='title'>hospitalurgency.com</div>
+            <MdFilterAlt className='filterIcon' onClick={() => setPopoutVisibility(!popoutVisibility)}/>
+        </div>
+        {popoutVisibility && <FilterPopout filter={filter} onFilterChange={(newFilter) => {
             setFilter(newFilter)
             forceUpdate()
             // console.log(filter)
-        }} />
+        }} />}
         <HospitalList hospitalList={filterHospitals(hospitals, filter)} />
     </>;
 }
 
 function HospitalList({ hospitalList }: {hospitalList: Hospital[]}) {
     return <>
-        {hospitalList.map((hospital) => <a href={`https://www.google.com/maps/dir/?api=1&destination=${hospital.coords[0]}%2C${hospital.coords[1]}`}>{hospital.name}</a>)}
+        {hospitalList.map((hospital) => <div>
+            <a href={`https://www.google.com/maps/dir/?api=1&destination=${hospital.coords[0]}%2C${hospital.coords[1]}`}>{hospital.name}</a>
+        </div>)}
     </>
 }
 

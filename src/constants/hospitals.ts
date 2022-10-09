@@ -56,8 +56,8 @@ export default [
 
         targetAudience: {
             children: true,
-            adults: true,
-            seniors: true,
+            adults: false,
+            seniors: false,
         },
 
         urgencyAttendance: {

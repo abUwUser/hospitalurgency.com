@@ -1,0 +1,20 @@
+.header {
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 12px 0 #444;
+}
+
+.header .title {
+    flex-grow: 1;
+    color: #47699D;
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.header .filterIcon {
+    width: 24px;
+    height: 24px;
+    color: #47699D;
+    cursor: pointer;
+}

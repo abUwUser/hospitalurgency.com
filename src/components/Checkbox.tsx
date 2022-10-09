@@ -1,4 +1,5 @@
 import React from "react"
+import './Checkbox.css';
 
 interface Props {
     name?: string
@@ -9,7 +10,7 @@ interface Props {
 const Checkbox = (props: Props) => {
     const [checked, setChecked] = React.useState(props.checked)
 
-    return <label>
+    return <div className="checkbox">
         <input type="checkbox"
             defaultChecked={checked}
             onChange={() => {
@@ -18,7 +19,7 @@ const Checkbox = (props: Props) => {
             }}
         />
         {props.name}
-    </label>
+    </div>
 }
 
 export default Checkbox
