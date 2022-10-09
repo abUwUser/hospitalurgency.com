@@ -4,9 +4,9 @@ interface Props {
     name?: string
     checked: boolean
     onChange: (newVal: boolean) => void
-}
+} 
 
-export default (props: Props) => {
+const Checkbox = (props: Props) => {
     const [checked, setChecked] = React.useState(props.checked)
 
     return <label>
@@ -20,3 +20,5 @@ export default (props: Props) => {
         {props.name}
     </label>
 }
+
+export default Checkbox

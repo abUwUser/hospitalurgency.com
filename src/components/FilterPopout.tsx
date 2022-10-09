@@ -5,7 +5,7 @@ interface Props {
     onFilterChange: (filter: HospitalFilter) => void
 }
 
-export default ({ filter, onFilterChange }: Props) => {
+const FilterPopout = ({ filter, onFilterChange }: Props) => {
     return <>
         <Checkbox checked={filter.hasICU} onChange={(val) => {
             filter.hasICU = val
@@ -109,3 +109,5 @@ export default ({ filter, onFilterChange }: Props) => {
         }} name="Radiologist" />
     </>
 }
+
+export default FilterPopout

@@ -23,7 +23,7 @@ function App() {
 
 function HospitalList({ hospitalList }: {hospitalList: Hospital[]}) {
     return <>
-        {hospitalList.map((hospital) => <div>{hospital.name}</div>)}
+        {hospitalList.map((hospital) => <a href={`https://www.google.com/maps/dir/?api=1&destination=${hospital.coords[0]}%2C${hospital.coords[1]}`}>{hospital.name}</a>)}
     </>
 }
 

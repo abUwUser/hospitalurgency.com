@@ -1,6 +1,6 @@
 import filters from "../constants/filters"
 
-export default (hospitalList: Hospital[], searchFor: HospitalFilter = filters) => {
+const filter = (hospitalList: Hospital[], searchFor: HospitalFilter = filters) => {
     const filteredHospitalList = hospitalList.filter(hospital => {
         let ret = true
         for (const [aKey, aVal] of Object.entries(searchFor)) {
@@ -8,7 +8,7 @@ export default (hospitalList: Hospital[], searchFor: HospitalFilter = filters) =
             if (aVal === false) continue
             else if (typeof aVal === "object") {
                 for (const [bKey, bVal] of Object.entries(aVal)) {
-                    if(bVal === false) continue
+                    if (bVal === false) continue
                     //@ts-ignore
                     if (bVal !== hospital[aKey][bKey]) {
                         ret = false
@@ -26,3 +26,5 @@ export default (hospitalList: Hospital[], searchFor: HospitalFilter = filters) =
     })
     return filteredHospitalList
 }
+
+export default filter
