@@ -27,10 +27,10 @@ const HospitalEntry = ({hospital}: {hospital: Hospital}) => {
         }, Math.floor(Math.random() * 2000))
 
         return () => clearInterval(stawp)
-    }, []);
+    }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
     return <div className="hospitalCard">
-        <img className="image" src={hospital.icon} />
+        <img className="image" src={hospital.icon} alt={hospital.name}/>
         <div className="content">
             <div className="eta">
                 <div className="time">{Math.round(randomizedTime / 60000)} mins.</div>
