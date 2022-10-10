@@ -1,13 +1,14 @@
 export default [
     {
         name: "Hospital 1",
+        icon: "https://www.colegioweb.com.br/wp-content/uploads/2016/10/Dia-do-Hospital-1.jpg",
         type: "private",
         coords: [-15.730069, -47.868752],
-        eta: 18000000,
+        eta: 1.8e+6,
         peopleWaiting: 22,
         attendancePerHour: 44,
 
-        hasICU: false,
+        hasICU: true,
         hasAvaiableSurgeries: true,
 
         targetAudience: {
@@ -45,14 +46,15 @@ export default [
     },
     {
         name: "Hospital 2",
+        icon: "https://thumbs.dreamstime.com/b/edif%C3%ADcio-do-hospital-59693686.jpg",
         type: "public",
         coords: [-15.758458, -47.940946],
-        eta: 27000000,
+        eta: 2.7e+6,
         peopleWaiting: 31,
         attendancePerHour: 29,
 
         hasICU: true,
-        hasAvaiableSurgeries: false,
+        hasAvaiableSurgeries: true,
 
         targetAudience: {
             children: true,
@@ -82,8 +84,8 @@ export default [
             neurologist: true,
             ophthalmologist: true,
             oncologist: true,
-            orthopedist: true,
-            psychiatrist: true,
+            orthopedist: false,
+            psychiatrist: false,
             radiologist: true
         }
     }

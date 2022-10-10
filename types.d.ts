@@ -38,6 +38,7 @@ declare interface HospitalFilter {
 
 declare interface Hospital extends HospitalFilter {
     name: string
+    icon?: string
     type: "public" | "private" | "universitary"
     coords: [x: string, y: string]
     eta: number

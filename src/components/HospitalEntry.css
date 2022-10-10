@@ -1,0 +1,72 @@
+.hospitalCard {
+    margin: 24px;
+    background: white;
+    box-shadow: 0 0 32px 0 #666;
+    border-radius: 32px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hospitalCard .image {
+    object-fit: cover;
+    width: 160px;
+    height: 160px;
+}
+
+.hospitalCard .content {
+    padding: 8px;
+    margin: 0 32px;
+    display: flex;
+    flex-grow: 1;
+}
+
+.hospitalCard .content .eta {
+    margin-right: 32px;
+}
+
+.hospitalCard .content .eta .time {
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.hospitalCard .content .info {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(2, auto);
+    gap: 20px 60px;
+}
+
+.hospitalCard .cardInformation {
+    color: #777;
+    display: flex;
+    align-items: center;
+}
+
+.hospitalCard .cardInformation .icon {
+    width: 21px;
+    height: 21px;
+    margin-right: 4px;
+}
+
+.hospitalCard .directions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 160px;
+    background-color: rgb(71, 105, 157, 25%);
+    color: #47699D;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.hospitalCard .directions svg {
+    width: 40px;
+    height: 40px;
+}
+
+.hospitalCard .directions span {
+    font-weight: bold;
+}

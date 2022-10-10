@@ -1,11 +1,11 @@
 export default {
-    hasICU: false,
-    hasAvaiableSurgeries: false,
+    hasICU: true,
+    hasAvaiableSurgeries: true,
 
     targetAudience: {
-        children: true,
-        adults: true,
-        seniors: true,
+        children: false,
+        adults: false,
+        seniors: false,
     },
     
     urgencyAttendance: {
@@ -24,14 +24,14 @@ export default {
     
     doctors: {
         dentist: false,
-        dermatologist: true,
-        gynecologist: true,
-        infectologist: true,
-        neurologist: true,
-        ophthalmologist: true,
-        oncologist: true,
-        orthopedist: true,
-        psychiatrist: true,
-        radiologist: true
+        dermatologist: false,
+        gynecologist: false,
+        infectologist: false,
+        neurologist: false,
+        ophthalmologist: false,
+        oncologist: false,
+        orthopedist: false,
+        psychiatrist: false,
+        radiologist: false
     }
 } as HospitalFilter
