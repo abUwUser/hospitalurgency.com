@@ -1,4 +1,8 @@
-# [hospitalurgency.com](https://euphonious-alpaca-b57a92.netlify.app/)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/fb0323ae-c268-4064-af96-10d462813507/deploy-status)](https://app.netlify.com/sites/euphonious-alpaca-b57a92/deploys)
+# [hospitalurgency.com](https://hospitalurgency.auser.catvibers.me)
 
 Shows the nearest hospitals avaiable in case of urgencies
+
+
+Concept for an app to show available hospitals. School project presented in FeCC 2022 by the student Pedro Santos Cartaxo Barbosa from Colégio Madre Carmem Sallés.
+
+Note that this app is in portuguese, so translation is required.
